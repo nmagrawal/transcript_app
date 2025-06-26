@@ -1,3 +1,2 @@
-streamlit>=1.12
-playwright>=1.25
-nest_asyncio>=1.5
+streamlit
+playwright
