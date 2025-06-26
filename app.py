@@ -57,7 +57,7 @@ async def process_single_url(url: str, log_container):
     log_container.info(f"▶️ Processing: {url}")
     try:
         async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=True, channel="chrome")
+            browser = await p.chromium.launch(headless=True)
             page = await browser.new_page()
 
             vtt_future = asyncio.Future()
